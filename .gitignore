@@ -1,0 +1,27 @@
+# Build
+build/
+dist/
+target/
+*.exe
+*.dll
+*.pdb
+
+# npm
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Env
+.env
+
+# Temp
+tmp/
+temp/
+*.tmp
+*.bak
