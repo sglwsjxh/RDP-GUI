@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AkiSpace",
+  "version": "0.1.0",
+  "identifier": "com.akispace.app",
+  "build": {
+    "frontendDist": "gui/dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "npm run dev --prefix gui",
+    "beforeBuildCommand": "npm run build --prefix gui"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "AkiSpace",
+        "width": 1280,
+        "height": 720,
+        "minWidth": 1024,
+        "minHeight": 600,
+        "center": true,
+        "resizable": true,
+        "decorations": true,
+        "transparent": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "public/icon.ico"
+    ],
+    "windows": {
+      "wix": {
+        "language": "zh-CN"
+      }
+    }
+  },
+  "plugins": {
+    "single-instance": {},
+    "global-shortcut": {
+      "shortcuts": {}
+    }
+  }
+}
